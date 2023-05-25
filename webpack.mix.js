@@ -19,5 +19,5 @@ const mix = require('laravel-mix');
      ])
      .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css')
      .copyDirectory('resources/css/', 'public/css')
-     .copyDirectory('resources/sass/', 'public/scss')
+     .copyDirectory('resources/scss/', 'public/scss')
      .copyDirectory('resources/assets', 'public/assets');
