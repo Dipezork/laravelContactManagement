@@ -11,9 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ])
-    .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css');
+ mix.js('resources/js/app.js', 'public/js')
+     .js('resources/js/scripts.js', 'public/js')
+     .js('resources/js/datatables/datatables-simple-demo.js', 'public/js')
+     .postCss('resources/css/app.css', 'public/css', [
+         //
+     ])
+     .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css')
+     .sass('resources/sass/style.scss', 'public/css')
+     .copy('resources/img/favicon.png', 'public/img');
