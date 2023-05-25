@@ -20,4 +20,6 @@ const mix = require('laravel-mix');
      .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css')
      .copyDirectory('resources/css/', 'public/css')
      .copyDirectory('resources/scss/', 'public/scss')
-     .copyDirectory('resources/assets', 'public/assets');
+     .copyDirectory('resources/assets', 'public/assets')
+     .copyDirectory('resources/css/contacts', 'public/css/contacts')
+     .copyDirectory('resources/js/contacts', 'public/js/contacts')
