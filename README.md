@@ -1,6 +1,55 @@
+# Laravel CRUD for Contact Management
+
+This repository contains a Laravel application for managing contacts, implementing the CRUD (Create, Read, Update, Delete) operations. The application provides a user-friendly interface to easily add, view, update, and delete contact information.
+
+## Features
+
+- **Create:** Add new contacts with details such as name, email, phone number, and address.
+- **Read:** View the list of all contacts along with their details.
+- **Update:** Edit the information of existing contacts, including name, email, phone number, and address.
+- **Delete:** Remove unwanted contacts from the system.
+- **Search:** Search and filter contacts based on name, email, or phone number.
+
+## Technologies Used
+
+- **Laravel**: A powerful PHP framework for building robust web applications.
+- **MySQL**: A relational database management system for storing contact information.
+- **HTML/CSS**: Used for creating the user interface and styling the application.
+- **Bootstrap**: A popular CSS framework for responsive and modern web design.
+
+## Setup Instructions
+
+1. Clone the repository: `git clone https://github.com/your-username/laravel-contact-management.git`
+2. Navigate to the project directory: `cd laravel-contact-management`
+3. Install the dependencies: `composer install`
+4. Create a copy of the `.env.example` file and rename it to `.env`.
+5. Generate a new application key: `php artisan key:generate`
+6. Configure the database connection in the `.env` file with your MySQL credentials.
+7. Run the database migrations: `php artisan migrate`
+8. Start the development server: `php artisan serve`
+9. Access the application in your web browser at `http://localhost:8000`.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and ensure they adhere to the coding standards.
+4. Commit your changes and push the branch to your forked repository.
+5. Submit a pull request with a detailed description of your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out to me at [your-email@example.com](mailto:your-email@example.com).
 
 
-Comando para inserts necessários no banco
+
+## Inserts in MySQL
 
 INSERT INTO recruitment.roles (name, role, created_at, updated_at)
 VALUES ('Usuario Comum', 1, NOW(), NOW());
@@ -9,68 +58,3 @@ INSERT INTO recruitment.roles (name, role, created_at, updated_at)
 VALUES ('Usuario Autenticado', 2, NOW(), NOW());
 
 
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
