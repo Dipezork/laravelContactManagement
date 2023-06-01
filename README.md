@@ -1,6 +1,7 @@
 
 
-<!-- Comando para inserts necessários no banco  -->
+Comando para inserts necessários no banco
+
 INSERT INTO recruitment.roles (name, role, created_at, updated_at)
 VALUES ('Usuario Comum', 1, NOW(), NOW());
 
